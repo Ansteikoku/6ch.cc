@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>６ちゃんねる</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; background: #f0f0f0; }
+    .thread { padding: 10px; background: #fff; margin: 10px 0; border: 1px solid #ccc; }
+    #board-tabs button { margin: 0 5px; }
+    #user-area { margin-bottom: 10px; }
+  </style>
+</head>
+<body>
+  <h1>６ちゃんねる</h1>
+  <div id="user-area">
+    <span id="login-status">未ログイン</span>
+    <input type="password" id="user-password" placeholder="パスワード" />
+    <button id="user-login-btn">ログイン</button>
+    <button id="user-logout-btn" style="display:none;">ログアウト</button>
+  </div>
+  <div id="board-tabs">読み込み中...</div>
+  <div id="threads"></div>
+
+  <h2>スレッド作成</h2>
+  <form id="thread-form">
+    <input type="text" id="title" placeholder="タイトル" required /><br />
+    <textarea id="body" placeholder="本文" required></textarea><br />
+    <input type="text" id="name" placeholder="名前（省略可）" /><br />
+    <input type="password" id="password" placeholder="削除用パスワード" required /><br />
+    <button type="submit">作成</button>
+  </form>
+</body>
+</html>

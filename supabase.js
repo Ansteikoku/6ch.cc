@@ -1,0 +1,1 @@
+// Supabase接続設定ファイル placeholder
